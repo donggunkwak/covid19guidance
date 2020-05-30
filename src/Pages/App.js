@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../Components/Header';
+import SelfChecker from '../Components/SelfChecker';
 import './App.scss';
 
 
@@ -13,7 +14,13 @@ const App = () => {
   const toggleDrawer = () => {
     setMenu(!menu);
   };
-
+  const parseLang = (l) => {
+    if (l === 'kor') {
+      return 'ko-kr';
+    } else {
+      return 'en-us';
+    }
+  }
   return (
     <div className="App">
       <Header 
@@ -21,6 +28,7 @@ const App = () => {
         onChangeLanguage={ onChangeLanguage }
         lang={ lang }
       />
+      <SelfChecker lang={ parseLang(lang) }/>
     </div>
   );
 };
