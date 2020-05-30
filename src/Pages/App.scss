@@ -1,0 +1,23 @@
+.App {
+  width: 100%;
+  background-image: linear-gradient(to left bottom, #00CDFC , #9C30AF);
+  // background-image: url("/static/back.png");
+  // background-size: cover;
+}
+.list-item {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: NotoSans;
+  width: 100%;
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.line {
+  width: 180px;
+  border: 1px solid gray;
+  margin-bottom: 12px;
+}
