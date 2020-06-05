@@ -1,0 +1,136 @@
+.icon-next {
+  margin: 48px 0 28px 0;
+  cursor: pointer;
+}
+#guidance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: NotoSans;
+  width: 100%;
+  color: white;
+  #title1 {
+    font-family: NotoSansThin;
+    font-size: 28px;
+    color: white;
+    height: 30px;
+    margin-top: 12px;
+  }
+  #title2 {
+    font-family: NotoSansBlack;
+    font-weight: 600;
+    font-size: 26px;
+    color: white;
+    margin-bottom: 12px;
+  }
+  #title1-kr {
+    font-family: NotoSansKR;
+    font-size: 28px;
+    color: white;
+    height: 30px;
+    margin-top: 12px;
+  }
+  #title2-kr {
+    font-family: NotoSansKRBlack;
+    font-weight: 600;
+    font-size: 26px;
+    color: white;
+    margin-bottom: 12px;
+  }
+  #guidance-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .sub-title {
+      font-family: NotoSansBlack;
+      font-size: 16px;
+      color: white;
+      margin-top: 32px;
+    }
+    .box-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .check-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid white;
+        border-radius: 40px;
+        width: 50%;
+        max-width: 200px;
+        height: 40px;
+        font-family: NotoSansThin;
+        color: white;
+        margin-top: 8px;
+        padding: 0 20px 0 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  #guidance-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    #first-category-box {
+      margin-top: 20px;
+    }
+    .category-box {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .category {
+        font-size: 14px;
+        font-family: NotoSansBlack;
+        // margin-left: 8px;
+        // margin-right: 8px;
+      }
+      .radio-group {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        // padding: 0 0 0 16px;
+        justify-content: space-between;
+        .radio-menu {
+          margin-right: 16px;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          font-family: NotoSansThin;
+          img {
+            margin-top: 2px;
+            margin-right: 4px;
+          }
+        } 
+      }
+    }
+    #first-content-box {
+      margin-top: 44px;
+    }
+    .content-box {
+      margin-top: 28px;
+      width: 100%;
+      max-width: 100%;
+      .line1 {
+        width: 100px;
+        border: 2px solid white;
+      }
+      .content-title {
+        font-size: 16px;
+        font-family: NotoSansBlack;
+      }
+      .content {
+        margin-top: 8px;
+        padding: 12px;
+        // font-family: NotoSansThin;
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}

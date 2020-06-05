@@ -1,12 +1,17 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'NotoSans-Regular', 'NotoSans-Bold',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@font-face { font-family: 'NotoSans'; src: url(./fonts/NotoSans-Regular.ttf) format('truetype'); }
+@font-face { font-family: 'NotoSansThin'; src: url(./fonts/NotoSans-Thin.ttf) format('truetype'); }
+@font-face { font-family: 'NotoSansBlack'; src: url(./fonts/NotoSans-Black.ttf) format('truetype'); }
+@font-face { font-family: 'NotoSansKRBlack'; src: url(./fonts/NotoSansKR-Black.otf) format('truetype'); }
+@font-face { font-family: 'NotoSansKR'; src: url(./fonts/NotoSansKR-Regular.otf) format('truetype'); }
+@font-face { font-family: 'NotoSansKRThin'; src: url(./fonts/NotoSansKR-Thin.otf) format('truetype'); }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
