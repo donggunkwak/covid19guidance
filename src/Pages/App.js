@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Header from '../Components/Header';
 import Guidance from '../Components/Guidance';
+import GuidanceKor from '../Components/GuidanceKor';
+import GuidanceEs from '../Components/GuidanceEs';
+import GuidanceZh from '../Components/GuidanceZh';
 import SelfChecker from '../Components/SelfChecker';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -29,6 +32,10 @@ const App = () => {
   const parseLang = (l) => {
     if (l === 'kor') {
       return 'ko-kr';
+    } else if (l === 'zh') {
+      return 'zh-cn';
+    } else if (l === 'es') {
+      return 'es-us';
     } else {
       return 'en-us';
     }
@@ -40,8 +47,17 @@ const App = () => {
         onChangeLanguage={ onChangeLanguage }
         lang={ lang }
       />
-      {status === 'guidance' &&
+      {(status === 'guidance' && lang === 'eng') &&
         <Guidance lang={ lang }/>
+      }
+      {(status === 'guidance' && lang === 'kor') &&
+        <GuidanceKor lang={ lang }/>
+      }
+      {(status === 'guidance' && lang === 'es') &&
+        <GuidanceEs lang={ lang }/>
+      }
+      {(status === 'guidance' && lang === 'zh') &&
+        <GuidanceZh lang={ lang }/>
       }
       {status === 'selfChecker' && 
         <SelfChecker lang={ parseLang(lang) }/>

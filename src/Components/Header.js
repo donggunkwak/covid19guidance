@@ -22,6 +22,8 @@ const Header = (props) => {
       >
         <MenuItem value={ 'eng' }>ENG</MenuItem>
         <MenuItem value={ 'kor' }>KOR</MenuItem>
+        <MenuItem value={ 'zh' }>ZH</MenuItem>
+        <MenuItem value={ 'es' }>ES</MenuItem>
       </Select>
     </div>
   );
