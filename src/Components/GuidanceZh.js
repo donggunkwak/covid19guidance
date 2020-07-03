@@ -56,6 +56,7 @@ const Guidance = (props) => {
       <img src={ Corona } width="40px" alt="corona"></img>
       <span id="title1-kr">指导</span>
       <span id="title2-kr">经过测试</span>
+      <span id="title3">Only the self-checker and guideline function in the iframe is from the CDC, while everything else is not.</span>
       {status==='first' &&
         <div id="guidance-first">
           <span className="sub-title">病毒检测</span>

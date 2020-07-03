@@ -16,7 +16,8 @@ const SelfChecker = (props) => {
         ? <span id="title2-kr">자가 진단</span>
         : <span id="title2">SELF-CHECKER</span>
       }
-      <span id="title3">This self-checker is from the Centers for Disease Control and Prevention.</span>
+      <span id="title3">This self-checker is from the CDC and Prevention.
+      Only the self-checker and guideline function in the iframe is from the CDC, while everything else is not.</span>
       <div id="iframe-box">
         <Iframe url={"https://covid19healthbot.cdc.gov/?language=" + props.lang }
           id="myId"

@@ -62,6 +62,7 @@ const Guidance = (props) => {
         ? <span id="title2">AFTER TEST</span>
         : <span id="title2-kr">안내 사항</span>
       }
+      <span id="title3">Only the self-checker and guideline function in the iframe is from the CDC, while everything else is not.</span>
       {status==='first' &&
         <div id="guidance-first">
           <span className="sub-title">{ (props.lang === 'eng') ? 'VIRAL TESTING' : '바이러스 검사' }</span>
